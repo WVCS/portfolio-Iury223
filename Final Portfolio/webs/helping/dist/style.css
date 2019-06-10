@@ -1,0 +1,120 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+nav{
+position: fixed !important;
+  width: 100%;
+  z-index: 100;
+}
+.rowHead{
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  border-bottom: 1px black solid;
+}
+.colHead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.headBtn{
+  background-color: transparent;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin-top: 1rem;
+   transition: .5s
+}
+.headBtn:focus{
+  outline: 0;
+}
+.headBtn:hover{
+  background-color: #2def5a;
+  transition: .5s
+}
+.contHead{
+  background-image: url("https://images.pexels.com/photos/55787/pexels-photo-55787.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+/*----About Me section starts here -----*/
+.aboutHead{
+  margin: 1rem;
+  position: relative;
+}
+.aboutHead:after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 2px;
+  width: 30%;
+  left: 35%;
+  background-color: black;
+}
+/*------Skill section starts here ------*/
+.skillIcon1{
+font-size: 90px;
+color: #ff7f16;
+}
+.skillIcon2{
+font-size: 90px;
+color: #ff7f16;
+}
+.skillIcon3{
+font-size: 90px;
+color: #ff7f16;
+}
+.skillIcon4{
+font-size: 90px;
+color: #ff7f16;
+}
+.colSkill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skillHead{
+  margin: 1rem;
+  position: relative;
+}
+.skillHead:after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 2px;
+  width: 7%;
+  left: 46.5%;
+  background-color: black;
+}
+/*---Progress section starts here -------*/
+.textProg{
+  margin: 2rem;
+  position: relative;
+}
+.textProg:after{
+  content: "";
+  position: absolute;
+  top: 90%;
+  height: 2px;
+  width: 10%;
+  left: 45%;
+  background-color: black;
+}
+/*----Contact Me section starts here ----*/
+
+.socialBar{
+  background-color: #696969;
+}
+.iCont{
+  display: flex;
+  justify-content: center;
+}
+.contactItems{
+  display: block;
+}
+.iIcons{
+  font-size: 50px;
+  color: #042069;
+}

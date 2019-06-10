@@ -1,0 +1,39 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: #5b92ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  position: absolute;
+  z-index: 999;
+  transition:0.5s;
+  font-size: 40px;
+  color: red;
+  background-color: transparent;
+  font-weight: bold;
+  border: 0;
+}
+button:focus{
+  outline:none;
+}
+button:hover{
+  position: absolute;
+  z-index: 999;
+  letter-spacing: 3px;
+  transition:0.5s;
+}
+canvas{
+  border: 1px black solid;
+}
+.afterAn{
+  color: white;
+  transition: 1s;
+}
