@@ -95,6 +95,12 @@ body{
   outline: none;
 }
 @media only screen and (max-width: 768px) {
+  .progress{
+	  height: 24px;
+	}
+  .progress-bar{
+  height: 24px;
+  }
   .navbar{
     display: block !important;
   }
