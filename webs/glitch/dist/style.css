@@ -1,0 +1,644 @@
+
+
+/* PLEASE NOTE THAT I DID NOT WRITE THIS IN CSS! I USED
+SCSS INSTEAD WHICH IS ONLY 60 LINE OF CODE. HOWEVER I COULD NOT USE SCSS
+BECAUSE THAT IT IS NOT VERY CONMPENTABLE WITH EDGE 9- */
+::-webkit-scrollbar { 
+    display: none; 
+}
+:root{
+--primary:#282828
+}
+@charset "UTF-8";
+* {
+  font-family: 'Oswald', sans-serif;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #292929;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.box-glitch {
+  position: absolute !important;
+  top: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh !important;
+  background-color: var(--primary);
+}
+.box-glitch .glitch {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  position: relative;
+  font-size: 100px;
+  padding: 15px;
+}
+.box-glitch .glitch:before, .box-glitch .glitch:after {
+  content: "ス";
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  padding: 30px;
+}
+.box-glitch .glitch:before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation: glitch-before 2s linear 0s infinite alternate-reverse;
+}
+.box-glitch .glitch:after {
+  left: -3px;
+  text-shadow: -5px 0 blue;
+  animation: glitch-after 2s linear 0s infinite alternate-reverse;
+}
+
+@keyframes glitch-before {
+  0% {
+    clip: rect(54px, 350px, 85px, 30px);
+  }
+  5% {
+    clip: rect(94px, 350px, 20px, 30px);
+  }
+  10% {
+    clip: rect(140px, 350px, 116px, 30px);
+  }
+  15% {
+    clip: rect(41px, 350px, 126px, 30px);
+  }
+  20% {
+    clip: rect(91px, 350px, 100px, 30px);
+  }
+  25% {
+    clip: rect(102px, 350px, 125px, 30px);
+  }
+  30% {
+    clip: rect(47px, 350px, 131px, 30px);
+  }
+  35% {
+    clip: rect(59px, 350px, 124px, 30px);
+  }
+  40% {
+    clip: rect(136px, 350px, 28px, 30px);
+  }
+  45% {
+    clip: rect(6px, 350px, 7px, 30px);
+  }
+  50% {
+    clip: rect(32px, 350px, 32px, 30px);
+  }
+  55% {
+    clip: rect(52px, 350px, 31px, 30px);
+  }
+  60% {
+    clip: rect(138px, 350px, 26px, 30px);
+  }
+  65% {
+    clip: rect(82px, 350px, 117px, 30px);
+  }
+  70% {
+    clip: rect(38px, 350px, 10px, 30px);
+  }
+  75% {
+    clip: rect(140px, 350px, 8px, 30px);
+  }
+  80% {
+    clip: rect(39px, 350px, 95px, 30px);
+  }
+  85% {
+    clip: rect(29px, 350px, 70px, 30px);
+  }
+  90% {
+    clip: rect(11px, 350px, 5px, 30px);
+  }
+  95% {
+    clip: rect(23px, 350px, 30px, 30px);
+  }
+  100% {
+    clip: rect(144px, 350px, 93px, 30px);
+  }
+}
+@keyframes glitch-after {
+  0% {
+    clip: rect(22px, 350px, 83px, 30px);
+  }
+  5% {
+    clip: rect(137px, 350px, 73px, 30px);
+  }
+  10% {
+    clip: rect(92px, 350px, 148px, 30px);
+  }
+  15% {
+    clip: rect(22px, 350px, 56px, 30px);
+  }
+  20% {
+    clip: rect(120px, 350px, 4px, 30px);
+  }
+  25% {
+    clip: rect(62px, 350px, 131px, 30px);
+  }
+  30% {
+    clip: rect(71px, 350px, 12px, 30px);
+  }
+  35% {
+    clip: rect(126px, 350px, 91px, 30px);
+  }
+  40% {
+    clip: rect(36px, 350px, 73px, 30px);
+  }
+  45% {
+    clip: rect(60px, 350px, 128px, 30px);
+  }
+  50% {
+    clip: rect(38px, 350px, 11px, 30px);
+  }
+  55% {
+    clip: rect(144px, 350px, 77px, 30px);
+  }
+  60% {
+    clip: rect(12px, 350px, 122px, 30px);
+  }
+  65% {
+    clip: rect(60px, 350px, 30px, 30px);
+  }
+  70% {
+    clip: rect(18px, 350px, 42px, 30px);
+  }
+  75% {
+    clip: rect(42px, 350px, 2px, 30px);
+  }
+  80% {
+    clip: rect(25px, 350px, 3px, 30px);
+  }
+  85% {
+    clip: rect(140px, 350px, 38px, 30px);
+  }
+  90% {
+    clip: rect(150px, 350px, 15px, 30px);
+  }
+  95% {
+    clip: rect(128px, 350px, 19px, 30px);
+  }
+  100% {
+    clip: rect(16px, 350px, 65px, 30px);
+  }
+}
+/*-----2nd ------ */
+.box-glitch .glitch2 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  position: relative;
+  font-size: 100px;
+  padding: 15px;
+  margin: 0;
+}
+.box-glitch .glitch2:before, .box-glitch .glitch2:after {
+  content: "ー";
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  padding: 30px;
+}
+.box-glitch .glitch2:before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation: glitch-before 2s linear 0s infinite alternate-reverse;
+}
+.box-glitch .glitch2:after {
+  left: -3px;
+  text-shadow: -5px 0 blue;
+  animation: glitch-after 2s linear 0s infinite alternate-reverse;
+}
+
+@keyframes glitch-before {
+  0% {
+    clip: rect(132px, 350px, 6px, 30px);
+  }
+  5% {
+    clip: rect(118px, 350px, 17px, 30px);
+  }
+  10% {
+    clip: rect(77px, 350px, 84px, 30px);
+  }
+  15% {
+    clip: rect(47px, 350px, 145px, 30px);
+  }
+  20% {
+    clip: rect(58px, 350px, 60px, 30px);
+  }
+  25% {
+    clip: rect(111px, 350px, 145px, 30px);
+  }
+  30% {
+    clip: rect(23px, 350px, 18px, 30px);
+  }
+  35% {
+    clip: rect(146px, 350px, 60px, 30px);
+  }
+  40% {
+    clip: rect(106px, 350px, 6px, 30px);
+  }
+  45% {
+    clip: rect(127px, 350px, 79px, 30px);
+  }
+  50% {
+    clip: rect(89px, 350px, 121px, 30px);
+  }
+  55% {
+    clip: rect(105px, 350px, 90px, 30px);
+  }
+  60% {
+    clip: rect(99px, 350px, 77px, 30px);
+  }
+  65% {
+    clip: rect(51px, 350px, 24px, 30px);
+  }
+  70% {
+    clip: rect(102px, 350px, 139px, 30px);
+  }
+  75% {
+    clip: rect(84px, 350px, 11px, 30px);
+  }
+  80% {
+    clip: rect(26px, 350px, 10px, 30px);
+  }
+  85% {
+    clip: rect(51px, 350px, 90px, 30px);
+  }
+  90% {
+    clip: rect(123px, 350px, 91px, 30px);
+  }
+  95% {
+    clip: rect(35px, 350px, 115px, 30px);
+  }
+  100% {
+    clip: rect(99px, 350px, 94px, 30px);
+  }
+}
+@keyframes glitch-after {
+  0% {
+    clip: rect(18px, 350px, 75px, 30px);
+  }
+  5% {
+    clip: rect(79px, 350px, 111px, 30px);
+  }
+  10% {
+    clip: rect(69px, 350px, 26px, 30px);
+  }
+  15% {
+    clip: rect(10px, 350px, 37px, 30px);
+  }
+  20% {
+    clip: rect(142px, 350px, 1px, 30px);
+  }
+  25% {
+    clip: rect(134px, 350px, 72px, 30px);
+  }
+  30% {
+    clip: rect(118px, 350px, 66px, 30px);
+  }
+  35% {
+    clip: rect(102px, 350px, 91px, 30px);
+  }
+  40% {
+    clip: rect(51px, 350px, 60px, 30px);
+  }
+  45% {
+    clip: rect(4px, 350px, 111px, 30px);
+  }
+  50% {
+    clip: rect(39px, 350px, 59px, 30px);
+  }
+  55% {
+    clip: rect(36px, 350px, 10px, 30px);
+  }
+  60% {
+    clip: rect(144px, 350px, 77px, 30px);
+  }
+  65% {
+    clip: rect(67px, 350px, 4px, 30px);
+  }
+  70% {
+    clip: rect(12px, 350px, 36px, 30px);
+  }
+  75% {
+    clip: rect(121px, 350px, 85px, 30px);
+  }
+  80% {
+    clip: rect(64px, 350px, 15px, 30px);
+  }
+  85% {
+    clip: rect(77px, 350px, 47px, 30px);
+  }
+  90% {
+    clip: rect(59px, 350px, 4px, 30px);
+  }
+  95% {
+    clip: rect(113px, 350px, 121px, 30px);
+  }
+  100% {
+    clip: rect(22px, 350px, 150px, 30px);
+  }
+}
+/*---3rd-----*/
+.box-glitch .glitch3 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  position: relative;
+  font-size: 100px;
+  padding: 15px;
+}
+.box-glitch .glitch3:before, .box-glitch .glitch3:after {
+  content: "プ";
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  padding: 30px;
+}
+.box-glitch .glitch3:before {
+  left: -2px;
+  text-shadow: -2px 0 red;
+  animation: glitch-before 2s linear 0s infinite alternate-reverse;
+}
+.box-glitch .glitch3:after {
+  left: 2px;
+  text-shadow: -5px 0 blue;
+  animation: glitch-after 2s linear 0s infinite alternate-reverse;
+}
+
+@keyframes glitch-before {
+  0% {
+    clip: rect(75px, 350px, 3px, 30px);
+  }
+  5% {
+    clip: rect(132px, 350px, 13px, 30px);
+  }
+  10% {
+    clip: rect(45px, 350px, 3px, 30px);
+  }
+  15% {
+    clip: rect(84px, 350px, 26px, 30px);
+  }
+  20% {
+    clip: rect(92px, 350px, 94px, 30px);
+  }
+  25% {
+    clip: rect(130px, 350px, 93px, 30px);
+  }
+  30% {
+    clip: rect(120px, 350px, 22px, 30px);
+  }
+  35% {
+    clip: rect(67px, 350px, 145px, 30px);
+  }
+  40% {
+    clip: rect(144px, 350px, 4px, 30px);
+  }
+  45% {
+    clip: rect(32px, 350px, 70px, 30px);
+  }
+  50% {
+    clip: rect(103px, 350px, 70px, 30px);
+  }
+  55% {
+    clip: rect(27px, 350px, 101px, 30px);
+  }
+  60% {
+    clip: rect(138px, 350px, 9px, 30px);
+  }
+  65% {
+    clip: rect(106px, 350px, 27px, 30px);
+  }
+  70% {
+    clip: rect(13px, 350px, 59px, 30px);
+  }
+  75% {
+    clip: rect(63px, 350px, 129px, 30px);
+  }
+  80% {
+    clip: rect(6px, 350px, 97px, 30px);
+  }
+  85% {
+    clip: rect(31px, 350px, 43px, 30px);
+  }
+  90% {
+    clip: rect(54px, 350px, 21px, 30px);
+  }
+  95% {
+    clip: rect(54px, 350px, 6px, 30px);
+  }
+  100% {
+    clip: rect(93px, 350px, 105px, 30px);
+  }
+}
+@keyframes glitch-after {
+  0% {
+    clip: rect(56px, 350px, 89px, 30px);
+  }
+  5% {
+    clip: rect(123px, 350px, 123px, 30px);
+  }
+  10% {
+    clip: rect(94px, 350px, 128px, 30px);
+  }
+  15% {
+    clip: rect(137px, 350px, 6px, 30px);
+  }
+  20% {
+    clip: rect(79px, 350px, 3px, 30px);
+  }
+  25% {
+    clip: rect(109px, 350px, 146px, 30px);
+  }
+  30% {
+    clip: rect(45px, 350px, 28px, 30px);
+  }
+  35% {
+    clip: rect(47px, 350px, 66px, 30px);
+  }
+  40% {
+    clip: rect(146px, 350px, 150px, 30px);
+  }
+  45% {
+    clip: rect(86px, 350px, 39px, 30px);
+  }
+  50% {
+    clip: rect(83px, 350px, 98px, 30px);
+  }
+  55% {
+    clip: rect(60px, 350px, 81px, 30px);
+  }
+  60% {
+    clip: rect(112px, 350px, 122px, 30px);
+  }
+  65% {
+    clip: rect(137px, 350px, 85px, 30px);
+  }
+  70% {
+    clip: rect(49px, 350px, 24px, 30px);
+  }
+  75% {
+    clip: rect(115px, 350px, 18px, 30px);
+  }
+  80% {
+    clip: rect(89px, 350px, 88px, 30px);
+  }
+  85% {
+    clip: rect(132px, 350px, 78px, 30px);
+  }
+  90% {
+    clip: rect(48px, 350px, 28px, 30px);
+  }
+  95% {
+    clip: rect(52px, 350px, 24px, 30px);
+  }
+  100% {
+    clip: rect(125px, 350px, 100px, 30px);
+  }
+}
+/*--THE ACTUAL CSS STARTS HERE -----------------------------------------------*/
+.container-openMenu{
+  background-color: #292929;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+.box-glitch{
+  width: 100%;
+  height: 100%;
+}
+.clickMe{
+  padding: 1rem;
+  font-size: 60px;
+  text-decoration:none;
+  color: #fff;
+  z-index: 300;
+  animation: bounce-5 5s infinite ease;
+}
+@keyframes bounce-5 {
+       0%   { transform: scale(1,1)    translateY(0); }
+       10%  { transform: scale(1.1,.9) translateY(0); }
+       30%  { transform: scale(.9,1.1) translateY(-25px); }
+       50%  { transform: scale(1,1)    translateY(0); }
+       57%  { transform: scale(1,1)    translateY(-7px); }
+       64%  { transform: scale(1,1)    translateY(0); }
+       100% { transform: scale(1,1)    translateY(0); }
+   }
+.moveTo{
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+/*---MAIN HEAD IS HERE UWU ----*/
+.containerName{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  
+}
+.myName{
+  margin: 0;
+  padding: 0 !important;
+  opacity: 0;
+  font-size: 150px;
+  color: white;
+  display: inline;
+  -webkit-animation: text-shadow-drop-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: text-shadow-drop-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.myNameRest{
+  margin:0;
+  padding:0;
+   opacity:0;
+  font-size: 150px;
+  color: white;
+  display: inline;
+  letter-spacing: -60px;
+  -webkit-animation: text-shadow-drop-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: text-shadow-drop-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.portfolio{
+  padding: 0;
+  margin: -20px 0 0 0;
+	font-size: 90px;
+	opacity: 0;
+	left: 3%;
+	top: 45%;
+	color: white;
+	 -webkit-animation: text-shadow-drop-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: text-shadow-drop-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.quote{
+  padding: 0;
+	font-size: 24px;
+	opacity: 0;
+  margin: 0;
+	left: 3%;
+	top: 62%;
+	color: white;
+	 -webkit-animation: text-shadow-drop-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: text-shadow-drop-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.glitchy{
+  margin: 1rem;
+}
+.name{
+margin: 1rem;
+}
+.nameContainer{
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@-webkit-keyframes text-shadow-drop-left {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: -12px 0 18px rgba(0, 0, 0, 0.80);
+  }
+}
+@keyframes text-shadow-drop-left {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+  }
+  100% {
+    text-shadow: -12px 0 18px rgba(0, 0, 0, 0.80);
+  }
+}
+/*---About Me Section starts here ---*/
+.abtContainer{
+  height: 60vh;
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.abtRow1{
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  padding:0;
+  
+}
+.abtMe{
+  color: white;
+  font-size: 60px;
+}
