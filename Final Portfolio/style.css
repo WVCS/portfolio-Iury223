@@ -407,7 +407,7 @@ box-shadow: 14px 14px 0px 0px rgba(0,0,0,0.75);
 .myInsta:hover{
   color: var(--dark);
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   transition: .5s;
 }
 .snapBtn{
@@ -423,7 +423,7 @@ box-shadow: 14px 14px 0px 0px rgba(0,0,0,0.75);
 }
 .snapBtn:hover{
   transition: .5s;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 .snapBtn:focus{
   outline: none;
