@@ -398,7 +398,7 @@ box-shadow: 14px 14px 0px 0px rgba(0,0,0,0.75);
 .myInsta{
   text-decoration: none;
   color: var(--dark);
-  font-size: 25px;
+  font-size: 20px;
   border: 2px solid var(--dark);
   border-radius: 5px;
   padding: 5px;
@@ -415,7 +415,7 @@ box-shadow: 14px 14px 0px 0px rgba(0,0,0,0.75);
   background-color: transparent;
   padding: 0;
   border: 0;
-  font-size: 25px;
+  font-size: 20px;
   border: 2px solid var(--dark);
   border-radius: 5px;
   padding: 5px;
