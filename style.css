@@ -106,6 +106,9 @@ body{
   .learnBtn{
    text-align: center;
   }
+  .upText{
+    margin-top: -50px;
+  }
   .bigHead{
     padding-left: 0rem !important;
     padding-top: 2em;
